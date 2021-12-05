@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import view.InputView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class InputViewTest {
@@ -16,9 +17,9 @@ public class InputViewTest {
     }
 
     @Test
-    @DisplayName("좌표를 검증하고 분리한다.")
+    @DisplayName("좌표를 검증하고 Point로 생성한다.")
     void split_input() {
-        String input = "(10,10)-(14,15)";
-        Assertions.assertThat()
+        String input = "(10,10)";
+        Assertions.assertThat(InputView.generatePoint(input)).isEqualTo(new Point(10,10));
     }
 }
