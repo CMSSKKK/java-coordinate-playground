@@ -24,6 +24,14 @@ public class Point {
         return no > LIMIT_MAX_NO || no < LIMIT_MIN_NO;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,4 +44,20 @@ public class Point {
     public int hashCode() {
         return Objects.hash(x, y);
     }
+
+    public double getDistance(Point point) {
+        double xLength = xDistance(point);
+        double yLength = yDistance(point);
+        return Math.sqrt(xLength+yLength);
+    }
+
+    private double xDistance(Point point) {
+        return Math.pow(this.x - point.getX(),2);
+    }
+
+    private double yDistance(Point point) {
+        return Math.pow(this.y - point.getY(),2);
+    }
+
+
 }
