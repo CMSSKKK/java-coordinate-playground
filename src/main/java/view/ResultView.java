@@ -10,8 +10,8 @@ public class ResultView {
 
 
     public static void printResult(List<Point> list) {
-        String answer = String.format("%.6f",getAnswer(list));
-        System.out.println(RESULT_ORDER+answer);
+        String answer = String.format("%.6f", getAnswer(list));
+        System.out.println(RESULT_ORDER + answer);
     }
 
     private static double getAnswer(List<Point> list) {

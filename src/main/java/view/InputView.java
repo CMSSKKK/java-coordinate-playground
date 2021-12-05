@@ -22,10 +22,10 @@ public class InputView {
     public static Point generatePoint(String input) {
         Pattern pattern = Pattern.compile(POINT_REGEX);
         Matcher matcher = pattern.matcher(input);
-        if(matcher.find()) {
+        if (matcher.find()) {
             int x = Integer.parseInt(matcher.group(1));
             int y = Integer.parseInt(matcher.group(2));
-            return new Point(x,y);
+            return new Point(x, y);
         }
         throw new IllegalArgumentException();
     }
@@ -43,7 +43,7 @@ public class InputView {
     private static void checkValidInput(String input) {
         Pattern pattern = Pattern.compile(INPUT_REGEX);
         Matcher matcher = pattern.matcher(input);
-        if(!matcher.matches()) {
+        if (!matcher.matches()) {
             throw new IllegalArgumentException();
         }
     }

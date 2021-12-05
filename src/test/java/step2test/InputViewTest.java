@@ -22,14 +22,14 @@ public class InputViewTest {
     @DisplayName("좌표를 검증하고 Point로 생성한다.")
     void generatePoint() {
         String input = "(10,10)";
-        Assertions.assertThat(InputView.generatePoint(input)).isEqualTo(new Point(10,10));
+        Assertions.assertThat(InputView.generatePoint(input)).isEqualTo(new Point(10, 10));
     }
 
     @Test
     @DisplayName("인풋을 검증하고 List<Point>로 반환한다.")
     void generatePoints() {
         String input = "(10,10)-(11,11)";
-        List<Point> points = Arrays.asList(new Point(10,10), new Point(11,11));
+        List<Point> points = Arrays.asList(new Point(10, 10), new Point(11, 11));
         Assertions.assertThat(InputView.generatePoints(input)).isEqualTo(points);
     }
 

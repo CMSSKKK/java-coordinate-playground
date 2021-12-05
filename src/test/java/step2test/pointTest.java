@@ -41,8 +41,8 @@ public class pointTest {
     @Test
     @DisplayName("두 점 사이의 거리를 계산하는 기능")
     void point_to_point_getDistance() {
-        Point origin = new Point(2,2);
-        assertThat(origin.getDistance(new Point(3,3))).isEqualTo(1.414,offset(0.00099));
+        Point origin = new Point(2, 2);
+        assertThat(origin.getDistance(new Point(3, 3))).isEqualTo(1.414, offset(0.00099));
 
     }
 }

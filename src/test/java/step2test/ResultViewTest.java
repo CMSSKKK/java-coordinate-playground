@@ -14,7 +14,7 @@ public class ResultViewTest {
     @Test
     @DisplayName("InputView에서 point 리스트를 받아서 결과를 출력한다.")
     void printResult() {
-        List<Point> list = Arrays.asList(new Point(10,10),new Point(11,11));
+        List<Point> list = Arrays.asList(new Point(10, 10), new Point(11, 11));
         ResultView.printResult(list);
     }
 }
