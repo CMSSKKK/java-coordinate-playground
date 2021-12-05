@@ -48,7 +48,5 @@ public class InputView {
         }
     }
 
-    public static double getAnswer(List<Point> points) {
-        return points.get(0).getDistance(points.get(1));
-    }
+
 }

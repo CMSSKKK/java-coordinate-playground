@@ -33,12 +33,5 @@ public class InputViewTest {
         Assertions.assertThat(InputView.generatePoints(input)).isEqualTo(points);
     }
 
-    @Test
-    @DisplayName("point 리스트에서 거리를 계산하여 반환한다.")
-    void generatePoints_getDistance() {
-        String input = "(10,10)-(11,11)";
-        List<Point> list = InputView.generatePoints(input);
-        double result = list.get(0).getDistance(list.get(1));
-        Assertions.assertThat(InputView.getAnswer(list)).isEqualTo(result);
-    }
+
 }
