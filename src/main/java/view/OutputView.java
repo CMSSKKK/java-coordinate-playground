@@ -3,8 +3,6 @@ package view;
 import domain.Point;
 
 import java.util.List;
-import java.util.function.BiFunction;
-import java.util.regex.Matcher;
 
 public class OutputView {
     private static final String HORIZONTAL = "----";
